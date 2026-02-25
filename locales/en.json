@@ -1,0 +1,344 @@
+{
+  "tabs": {
+    "home": "Home",
+    "breed": "Breed ID",
+    "analysis": "Ask AI",
+    "generate": "AI Art"
+  },
+  "home": {
+    "title": "iPet",
+    "greeting": "Hi~ How can I help you?",
+    "breedCard": "Breed ID",
+    "breedDesc": "Identify pet breeds by photo",
+    "analysisCard": "Ask AI",
+    "analysisDesc": "AI answers pet questions",
+    "generateCard": "AI Art",
+    "generateDesc": "Generate pet art with AI",
+    "knowledge": "Pet Tips",
+    "viewAll": "View All",
+    "searchPlaceholder": "Search...",
+    "featureIntro": "🔗 Features",
+    "petKnowledge": "📚 Pet Tips",
+    "featureCard1Title": "🐱 What breed is that?",
+    "featureCard1Desc": "Every pet is unique. Whether it's a stray cat you met on the street or your beloved companion at home, we help you learn more about them. Clear, well-lit photos work best!",
+    "featureCard1Tag": "Breed ID",
+    "featureCard2Title": "🤔 What's going on with my pet?",
+    "featureCard2Desc": "Is your cat doing midnight zoomies or is your dog feeling down? Don't panic from random internet searches! We'll help you find reliable answers and understand your pet's signals.",
+    "featureCard2Tag": "Ask AI",
+    "featureCard3Title": "✨ Transform your pet into art!",
+    "featureCard3Desc": "Time to get creative! Want to see your dog as an astronaut or your cat as a forest king? Just upload a photo and describe your dream scene - we'll make it happen!",
+    "featureCard3Tag": "AI Art",
+    "searchResults": "Search Results",
+    "noResults": "No results found",
+    "askAI": "Not found? Ask AI →",
+    "cancel": "Cancel"
+  },
+  "breed": {
+    "title": "Breed ID",
+    "hint": "Take or upload a pet photo",
+    "takePhoto": "Camera",
+    "choosePhoto": "Gallery",
+    "recognizing": "Identifying...",
+    "result": "Result",
+    "tryAgain": "Try Again",
+    "remaining": "Remaining",
+    "supported": "Supported",
+    "scanTitle": "Scan to Identify",
+    "scanSubtitle": "Ensure good lighting and clear image",
+    "remainingCount": "Remaining: {{count}}",
+    "selectImageSource": "Select Image Source",
+    "cancel": "Cancel",
+    "permissionDenied": "Permission Denied",
+    "needCameraPermission": "Camera permission required",
+    "needAlbumPermission": "Photo library permission required",
+    "error": "Error",
+    "cameraError": "Cannot open camera",
+    "albumError": "Cannot open gallery"
+  },
+  "analysis": {
+    "title": "iPet",
+    "welcome": "Hi~ How can I help you?",
+    "remaining": "Remaining: {{count}}",
+    "clearChat": "Clear Chat",
+    "clearConfirmTitle": "Clear Chat",
+    "clearConfirmMsg": "Clear all messages? This cannot be undone.",
+    "cancel": "Cancel",
+    "confirmClear": "Clear",
+    "aiDisclaimer": "AI Generated",
+    "inputPlaceholder": "Ask a question..."
+  },
+  "generate": {
+    "title": "AI Art",
+    "cases": "🖼️ Gallery",
+    "remaining": "Remaining: {{count}}/1",
+    "welcome": "Hi~ Upload a photo of your pet!",
+    "askStyle": "Got it! Describe the style or scene you want.",
+    "generating": "Generating...",
+    "generated": "Done!",
+    "uploadFirst": "Please upload a pet photo first~",
+    "tapToView": "Tap to view",
+    "clearChat": "Clear Chat",
+    "clearConfirmTitle": "Clear Chat",
+    "clearConfirmMsg": "Clear all messages? This cannot be undone.",
+    "cancel": "Cancel",
+    "confirmClear": "Clear",
+    "aiDisclaimer": "AI Generated",
+    "generateFailed": "Generation failed",
+    "generateFailedRetry": "Generation failed. Please try again."
+  },
+  "drawer": {
+    "settings": "Settings",
+    "subscription": "Subscription",
+    "proMember": "Pro Member",
+    "freeUser": "Free User",
+    "expiresAt": "Expires: {{date}}",
+    "todayRemaining": "Today's Quota",
+    "breedRecognize": "Breed ID",
+    "chatAnalysis": "Ask AI",
+    "petGenerate": "AI Art",
+    "unlimited": "Unlimited",
+    "adReward": "+{{count}} via Ad",
+    "adReward3": "+1 via {{count}} Ads",
+    "upgradePro": "Go Pro",
+    "redeemCode": "Redeem Code",
+    "restorePurchase": "Restore Purchase",
+    "contactUs": "Contact Us",
+    "feedback": "Feedback",
+    "privacy": "Privacy Policy",
+    "disclaimer": "Disclaimer",
+    "version": "Version {{version}}"
+  },
+  "subscription": {
+    "title": "Go Pro",
+    "subtitle": "Unlock all features",
+    "feature1": "Unlimited usage",
+    "feature2": "Latest AI models",
+    "feature3": "Priority support",
+    "feature4": "Ad-free",
+    "subscribe": "Subscribe Now",
+    "terms": "Auto-renews. Cancel anytime.",
+    "backTitle": "Home"
+  },
+  "limitModal": {
+    "title": "Daily Limit Reached",
+    "subtitle": "{{feature}} limit reached. You can:",
+    "watchAd": "+{{count}} via Ad",
+    "watchAdRemaining": "Watch Ad ({{count}} left)",
+    "upgradePro": "Go Pro - Unlimited",
+    "proHint": "Pro members enjoy unlimited access, ad-free",
+    "progress": "Progress: {{current}}/{{total}}"
+  },
+  "promoCode": {
+    "title": "Redeem Code",
+    "placeholder": "Enter code",
+    "redeem": "Redeem",
+    "success": "Success!",
+    "reward": "Reward: {{reward}}",
+    "subtitle": "Enter code for exclusive benefits"
+  },
+  "common": {
+    "copy": "Copy",
+    "copied": "Copied",
+    "save": "Save to Photos",
+    "saved": "Saved to Photos",
+    "saveFailed": "Save failed",
+    "saving": "Saving...",
+    "permissionDenied": "Permission Denied",
+    "needAlbumPermission": "Photo library access required",
+    "close": "Close"
+  },
+  "features": {
+    "recognize": "Breed ID",
+    "chat": "Ask AI",
+    "generate": "AI Art"
+  },
+  "scanResult": {
+    "title": "Result",
+    "back": "Back",
+    "recognizing": "Identifying...",
+    "retry": "Go Back",
+    "description": "Description",
+    "unknownBreed": "Unknown Breed",
+    "noImage": "No image found",
+    "recognizeFailed": "Recognition failed"
+  },
+  "chatInput": {
+    "placeholder": "Ask your question...",
+    "selectImage": "Select Image",
+    "takePhoto": "Camera",
+    "choosePhoto": "Gallery",
+    "cancel": "Cancel",
+    "permissionDenied": "Permission Denied",
+    "needCameraPermission": "Camera permission required",
+    "needAlbumPermission": "Photo library permission required",
+    "error": "Error",
+    "cameraError": "Cannot open camera",
+    "albumError": "Cannot open gallery"
+  },
+  "breeds": {
+    "goldenRetriever": "Golden Retriever",
+    "husky": "Husky",
+    "corgi": "Corgi",
+    "samoyed": "Samoyed",
+    "germanShepherd": "German Shepherd",
+    "poodle": "Poodle",
+    "bulldog": "Bulldog",
+    "bichon": "Bichon Frise",
+    "shibaInu": "Shiba Inu",
+    "alaskan": "Alaskan Malamute",
+    "borderCollie": "Border Collie",
+    "pomeranian": "Pomeranian",
+    "rottweiler": "Rottweiler",
+    "labrador": "Labrador",
+    "dachshund": "Dachshund",
+    "doberman": "Doberman",
+    "chineseDog": "Chinese Rural Dog",
+    "britishShorthair": "British Shorthair",
+    "ragdoll": "Ragdoll",
+    "bengal": "Bengal",
+    "tabby": "Tabby",
+    "devonRex": "Devon Rex",
+    "sphynx": "Sphynx",
+    "birman": "Birman",
+    "americanShorthair": "American Shorthair",
+    "orangeCat": "Orange Cat",
+    "brittanyBobtail": "Brittany Bobtail",
+    "norwegianForest": "Norwegian Forest",
+    "siamese": "Siamese",
+    "scottishFold": "Scottish Fold",
+    "maineCoon": "Maine Coon",
+    "persian": "Persian"
+  },
+  "cases": {
+    "case1": "A cinematic cyberpunk photo of a cat wearing glowing LED goggles, looking at floating blue holographic digits. Background: neon-lit rainy Tokyo streets with reflections.",
+    "case2": "A classical oil painting of a cat sitting majestically on a red velvet cushion, wearing a golden crown. Background: grand palace interior with golden sunlight streaming through tall windows.",
+    "case3": "A hyper-realistic macro photo of a cat's face peeking out from a thick cream-colored knit blanket, showing only eyes and nose. Golden morning light, visible fur texture, soft blurred cozy living room background."
+  },
+  "knowledge": {
+    "title": "Pet Tips",
+    "backToHome": "Home",
+    "catTab": "Cat Facts",
+    "dogTab": "Dog Facts",
+    "articleNotFound": "Article not found",
+    "cat1": {
+      "title": "Midnight Madness: Why Does Your Cat Become a Parkour Champion at 2 AM?",
+      "content": "It's 2 AM and you're fast asleep when suddenly a \"tornado\" tears through your living room. Don't worry, it's not a burglar—it's your cat releasing all the energy it saved up during the day. As natural dusk hunters, cats have an internal alarm clock that triggers their wild instincts when it gets dark. Simply put, your cat is running an obstacle course without sneakers. Once it's done, it'll happily go back to sleep!"
+    },
+    "cat2": {
+      "title": "Getting Rubbed at the Door? Congrats, You've Been Officially Claimed!",
+      "content": "When you come home and your cat immediately runs over to rub its face against your legs, it's not just being cute. Cats have special scent glands on their faces, and by rubbing you, they're leaving their scent—essentially stamping you with \"this human is mine.\" This is how cats express trust and belonging. Congratulations, you've been officially certified as family!"
+    },
+    "cat3": {
+      "title": "Professional Kneading: Why Does Your Cat \"Make Biscuits\" on Soft Things?",
+      "content": "Ever seen your cat rhythmically pressing its paws on a blanket like it's kneading dough? This behavior is called \"making biscuits\" and comes from their nursing instinct as kittens. Baby cats knead their mother's belly to stimulate milk flow. As adults, this motion becomes a way to express comfort and contentment. When your cat kneads on you, it means it feels super relaxed and happy!"
+    },
+    "cat4": {
+      "title": "The Slow Blink: What Does That Loving Gaze Mean?",
+      "content": "If your cat looks at you and slowly blinks, congratulations—you've just received a \"cat kiss\"! In the cat world, direct staring is a threat, while slow blinking means \"I trust you, I mean no harm.\" You can respond the same way, and it becomes a silent exchange of love between you two."
+    },
+    "cat5": {
+      "title": "Surprise or Scare: Why Does Your Cat Bring You \"Dead Bugs\"?",
+      "content": "When your cat drops a \"trophy\" at your feet, you might jump in fright, but this is actually how it shows love. In the wild, mother cats bring prey back to teach their kittens to hunt. Your cat sees you as a \"big kitten\" that needs care and is trying to teach you survival skills in its own way!"
+    },
+    "cat6": {
+      "title": "Table Terrorist: Why Must Your Cat Push Things Off the Table?",
+      "content": "Cats push things off tables and watch them fall as a way of exploring the world. They touch objects to determine if they're prey, and pushing them off to see the reaction is instinctive hunting practice. Of course, they've also discovered this immediately gets your attention, so sometimes it's purely to get noticed!"
+    },
+    "cat7": {
+      "title": "Box Obsession: Why Sleep in a Delivery Box Instead of an Expensive Cat Bed?",
+      "content": "You bought the fanciest cat bed, but your cat prefers that beat-up delivery box? In cat logic, tight spaces mean absolute defense. A cardboard box is like a fortress where they can observe everything outside without being seen. This sense of security can't be matched by the softest cushion. Accept it—in your cat's eyes, the delivery box is the real mansion."
+    },
+    "cat8": {
+      "title": "Chattering Mode: What's That \"Clicking\" Sound at Birds Outside?",
+      "content": "When you notice your cat staring at birds outside, making typewriter-like clicking sounds, it's experiencing \"hunting frustration.\" It desperately wants to pounce and catch the prey but is blocked by glass. This see-but-can't-touch anxiety makes it involuntarily mimic the motion of biting prey's neck. Think of it as a silent sigh: \"If not for this window, you'd be my afternoon snack!\""
+    },
+    "cat9": {
+      "title": "The Butt Greeting: Why Does Your Cat Put Its Tail in Your Face?",
+      "content": "When you want to give your cat a kiss but it turns around and presents its rear? Don't take offense—in cat society, this is actually high-level social etiquette! Cats exchange identity information by sniffing each other's behinds. By showing you its most vulnerable back and private area, it's treating you as one of its own. It's just saying: \"Hey buddy, want to verify my identity too?\""
+    },
+    "cat10": {
+      "title": "Post-Poop Zoomies: Why the Mad Dash After Using the Litter Box?",
+      "content": "Many cats rocket out of the litter box like they've been launched. This is called \"post-poop euphoria.\" Part of it is the satisfying feeling from bowel nerve stimulation after elimination; the other part is ancestral survival instinct—finish your business and run before the smell attracts predators. So yes, it's literally practicing \"escape drills\" with its life."
+    },
+    "cat11": {
+      "title": "Faucet Fanatic: Why Drink Running Water Instead of the Bowl?",
+      "content": "Do you often find your cat jumping up to drink from the faucet while you're washing your face? In the wild, flowing water means cleaner and safer. Your cat's instincts tell it that the \"stagnant water\" sitting in a bowl for days might not be healthy. Plus, watching water droplets bounce around is not just thirst-quenching but also a fun hunting game for them."
+    },
+    "cat12": {
+      "title": "Workplace Interference: Why Does Your Cat Love Sitting on Your Keyboard?",
+      "content": "You're working, but your cat insists on being a \"roadblock\" on your keyboard. It's not trying to help you code—it simply wants to steal your attention. It noticed you've been staring at this glowing thing for hours without looking at it once, so it decided to become the center of your vision. Also, the warm laptop keyboard makes a pretty nice heated seat cushion."
+    },
+    "cat13": {
+      "title": "Mouth Inspector: Why Does Your Cat Sniff Your Mouth?",
+      "content": "Sometimes after you finish eating, your cat comes over to seriously sniff your mouth. Don't flatter yourself—it's not trying to kiss you. It's conducting a \"dietary investigation\" through smell. It wants to know what you secretly ate without sharing, checking if there's anything good it could get a piece of. This is purely a food-related field sampling."
+    },
+    "cat14": {
+      "title": "High Ground Advantage: Why Does Your Cat Perch on Top of the Wardrobe?",
+      "content": "Always spotting those glowing eyes from high places? Because height equals power. In the wild, high ground lets them see every movement in their territory while avoiding ground-level predators. Sitting atop the cabinet makes them feel in control of everything, with an emperor-like sense of security: \"My kingdom, all within sight.\""
+    },
+    "cat15": {
+      "title": "Belly Trap: Does It Want Belly Rubs? Don't Fall for It!",
+      "content": "When your cat rolls over and shows its soft belly, it's actually saying: \"I feel relaxed here.\" But this doesn't mean \"come pet me.\" The belly is a cat's most vulnerable spot, and the moment you reach for it, its self-defense instincts activate, giving you a \"deadly scissor kick.\" Remember, this is a display of trust, not an invitation for interaction."
+    },
+    "dog1": {
+      "title": "Bedtime Ritual: Why Must Dogs Circle Three Times Before Lying Down?",
+      "content": "Ever watched your dog sleep? They always circle in place like searching for satellite signal. This is actually muscle memory from ancestors surviving in the wild. Circling was to flatten grass, drive away insects, and create a comfortable little nest. Even though today's mattresses are perfectly flat, this \"renovation ritual\" absolutely cannot be skipped."
+    },
+    "dog2": {
+      "title": "Crazy Wagging: The Secret Language of Dog Tail Movements",
+      "content": "Many think a wagging tail means a happy dog, but tail position and movement style have different meanings. A high, fast-wagging tail usually indicates excitement, while a low, slow wag might mean anxiety or submission. Wagging more to the right suggests positive emotions; to the left might indicate nervousness. Learning to read your dog's tail language helps you better understand its mood!"
+    },
+    "dog3": {
+      "title": "Grass Buffet: Why Do Dogs Sometimes Eat Grass?",
+      "content": "Don't worry, it's not trying to become a sheep. Sometimes it's because of an upset stomach, wanting to use rough grass fiber to induce vomiting and clear out the bad stuff. Other times it's simply a predatory instinct in their genes, wanting to supplement some folic acid. As long as it's not eating frantically or becoming lethargic afterward, it's just self-prescribing a \"digestive aid.\""
+    },
+    "dog4": {
+      "title": "Social Etiquette: Why Do Dogs Sniff Butts When Meeting?",
+      "content": "Humans shake hands when meeting; dogs sniff butts. A dog's anal glands contain its entire \"resume\": age, gender, recent diet, and mood. With one sniff, they complete a comprehensive background check. So if your dog likes sniffing your friends too, don't be embarrassed—it's just carefully reading their \"personal profile.\""
+    },
+    "dog5": {
+      "title": "Scent Collector: Why Does Your Dog Love Your Smelly Shoes?",
+      "content": "Just took off your shoes and they've already been snatched, maybe even slept on? Don't be grossed out—this means it loves you immensely! Your shoes are filled with your strongest scent, making them a \"portable comfort object\" for your dog. Smelling your scent gives it tremendous security when home alone. It doesn't like the smell—it likes the you that comes with the smell."
+    },
+    "dog6": {
+      "title": "Digging Frenzy: Why Do Dogs Love Burying Things?",
+      "content": "Dogs burying bones or toys is an instinct inherited from ancestors. Wild dogs would bury leftover food for later. Even with abundant food now, this instinct remains. Interestingly, some dogs \"pretend\" to bury things, pushing their nose around on the carpet—same instinct at work!"
+    },
+    "dog7": {
+      "title": "Kiss Request: Why Does Your Dog Love Licking Your Face?",
+      "content": "Dogs licking your face is a way of expressing love and respect. In dog packs, lower-ranking dogs lick the mouths of higher-ranking ones as a sign of submission and affection. When your dog licks you, it's saying \"I love you, I respect you.\" Of course, they might also just think your face tastes good!"
+    },
+    "dog8": {
+      "title": "Reverse Parking: Why Kick Grass After Pooping?",
+      "content": "After doing their business, dogs stylishly kick dirt backward with their hind legs. This isn't to cover the smell—quite the opposite, it's \"amplifying\" it. Glands on their paw pads leave more scent signals with each kick, and turning over soil spreads the message farther. It's announcing to the world: \"This dog was here, this territory is mine!\""
+    },
+    "dog9": {
+      "title": "Guardian Mode: Why Does Your Dog Follow You to the Bathroom?",
+      "content": "When you're on the toilet and your dog stares at you solemnly? In its mind, elimination is when animals are most vulnerable and easily attacked. As your good buddy, it's dutifully \"standing guard,\" making sure no enemy ambushes you at this moment. This \"life-or-death friendship\" is a bit awkward but quite touching."
+    },
+    "dog10": {
+      "title": "Secret Weapon: What's With Those \"Puppy Dog Eyes\"?",
+      "content": "When dogs mess up, they raise their eyebrows, show the whites of their eyes, and look at you innocently. Research shows dogs evolved these special eye muscles purely to win human sympathy. They discovered that making this expression means you can't bring yourself to scold them. This isn't just an expression—it's cross-species psychological warfare, and clearly, they've won."
+    },
+    "dog11": {
+      "title": "Tail Chase: Why Do Dogs Chase Their Own Tails?",
+      "content": "Dogs chasing their tails looks silly, but it's actually normal play behavior. Puppies find their tails fascinating when they first discover them, and chasing is a way to explore their bodies. Adult dogs occasionally chase their tails out of boredom or to get your attention. However, frequent tail-chasing might warrant checking for skin issues or anxiety."
+    },
+    "dog12": {
+      "title": "Dream Running: Why Do Dogs \"Run\" in Their Sleep?",
+      "content": "See your dog's legs moving while sleeping, like it's running? It's dreaming! Research shows dogs experience REM sleep stages just like humans, during which they dream. They might be chasing squirrels, playing with you, or reliving happy moments from the day. Let them finish their sweet dreams in peace!"
+    },
+    "dog13": {
+      "title": "Trophy Return: Why Does Your Dog Greet You With a Toy?",
+      "content": "You walk through the door and it immediately bounds over with that drool-covered ball. It doesn't necessarily want to play right now—it wants to express its joy at your return by sharing its most treasured possession. It's saying: \"Hey! You're finally back, look at my most precious thing—it's for you!\""
+    },
+    "dog14": {
+      "title": "Splash Zone: Why Does Your Dog Shake Off Right Next to You?",
+      "content": "After bathing your dog, it always starts shaking wildly just as you reach for the towel. This is because the water feels too heavy, making it sluggish and anxious. And shaking near you? In its subconscious, you're its safe zone. Though you end up with a face full of water, that's 100% trust in you."
+    },
+    "dog15": {
+      "title": "Head Tilt: What Does It Mean When Dogs Tilt Their Heads?",
+      "content": "When your dog tilts its head at you, that adorable look melts hearts. This action is actually the dog trying hard to understand what you're saying! Tilting helps them better locate sound sources and see your expressions clearly. Research suggests smarter dogs tilt their heads more often because they're seriously thinking about what you mean!"
+    }
+  }
+}
