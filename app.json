@@ -23,7 +23,10 @@
       },
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false,
-      "package": "com.petapp.ipet"
+      "package": "com.petapp.ipet",
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png",
@@ -46,6 +49,12 @@
           "androidAppId": "ca-app-pub-2964512936249564~3135000302"
         }
       ]
-    ]
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "73776da2-08b5-426b-9688-ca362650d628"
+      }
+    }
   }
 }
