@@ -163,18 +163,18 @@ export default function AnalysisScreen() {
 
   return (
     <SafeAreaView style={styles.container} edges={['top']}>
+      <View style={styles.header}>
+        <Text style={styles.title}>{t('analysis.title')}</Text>
+        {!isPro && (
+          <Text style={styles.remainingCount}>{t('analysis.remaining', { count: chatCount })}</Text>
+        )}
+      </View>
+
       <KeyboardAvoidingView
         style={styles.keyboardView}
-        behavior={Platform.OS === 'ios' ? 'padding' : undefined}
-        keyboardVerticalOffset={0}
+        behavior="padding"
+        keyboardVerticalOffset={Platform.OS === 'ios' ? 0 : 0}
       >
-        <View style={styles.header}>
-          <Text style={styles.title}>{t('analysis.title')}</Text>
-          {!isPro && (
-            <Text style={styles.remainingCount}>{t('analysis.remaining', { count: chatCount })}</Text>
-          )}
-        </View>
-
         <FlatList
           ref={flatListRef}
           data={messages}
@@ -182,6 +182,7 @@ export default function AnalysisScreen() {
           keyExtractor={(item) => item.id}
           style={styles.messageList}
           contentContainerStyle={styles.messageListContent}
+          onContentSizeChange={scrollToBottom}
           ListFooterComponent={
             isLoading ? <ChatBubble role="assistant" content="" isLoading /> : null
           }
@@ -241,7 +242,7 @@ const styles = StyleSheet.create({
     paddingVertical: 16,
   },
   bottomContainer: {
-    paddingBottom: 8,
+    paddingBottom: 4,
   },
   clearButton: {
     alignSelf: 'flex-start',
@@ -260,7 +261,7 @@ const styles = StyleSheet.create({
     fontSize: 12,
     color: '#999999',
     textAlign: 'center',
-    marginTop: 8,
-    marginBottom: 4,
+    marginTop: 4,
+    marginBottom: 2,
   },
 });

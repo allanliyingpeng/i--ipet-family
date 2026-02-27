@@ -396,10 +396,20 @@ export default function GenerateScreen() {
 
   return (
     <SafeAreaView style={styles.container} edges={['top']}>
+      <View style={styles.headerRow}>
+        <Text style={styles.sectionTitle}>{t('generate.cases')}</Text>
+        {!isPro && (
+          <Text style={styles.remainingCount}>
+            {t('generate.remaining', { count: generateCount })}
+          </Text>
+        )}
+      </View>
+      <CaseCarousel />
+
       <KeyboardAvoidingView
         style={styles.keyboardView}
-        behavior={Platform.OS === 'ios' ? 'padding' : undefined}
-        keyboardVerticalOffset={0}
+        behavior="padding"
+        keyboardVerticalOffset={Platform.OS === 'ios' ? 0 : 0}
       >
         <FlatList
           ref={flatListRef}
@@ -408,19 +418,7 @@ export default function GenerateScreen() {
           keyExtractor={(item) => item.id}
           style={styles.messageList}
           contentContainerStyle={styles.messageListContent}
-          ListHeaderComponent={
-            <>
-              <View style={styles.headerRow}>
-                <Text style={styles.sectionTitle}>{t('generate.cases')}</Text>
-                {!isPro && (
-                  <Text style={styles.remainingCount}>
-                    {t('generate.remaining', { count: generateCount })}
-                  </Text>
-                )}
-              </View>
-              <CaseCarousel />
-            </>
-          }
+          onContentSizeChange={scrollToBottom}
           ListFooterComponent={
             isLoading && !messages.some((m) => m.isGenerating) ? (
               <ChatBubble role="assistant" content="" isLoading />
@@ -506,7 +504,7 @@ const styles = StyleSheet.create({
     marginTop: 6,
   },
   bottomContainer: {
-    paddingBottom: 8,
+    paddingBottom: 4,
   },
   clearButton: {
     alignSelf: 'flex-start',
@@ -525,7 +523,7 @@ const styles = StyleSheet.create({
     fontSize: 12,
     color: '#999999',
     textAlign: 'center',
-    marginTop: 8,
-    marginBottom: 4,
+    marginTop: 4,
+    marginBottom: 2,
   },
 });

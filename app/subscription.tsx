@@ -40,8 +40,8 @@ export default function SubscriptionScreen() {
       </View>
 
       <View style={styles.pricing}>
-        <Text style={styles.price}>¥28</Text>
-        <Text style={styles.period}>/月</Text>
+        <Text style={styles.price}>{t('subscription.price')}</Text>
+        <Text style={styles.period}>{t('subscription.period')}</Text>
       </View>
 
       <TouchableOpacity style={styles.button} onPress={handleSubscribe}>
