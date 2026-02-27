@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "i宠家",
+    "name": "i宠家 - iPet Family",
     "slug": "pet-app",
     "version": "1.0.1",
     "orientation": "portrait",
@@ -35,6 +35,7 @@
     },
     "plugins": [
       "expo-router",
+      "expo-splash-screen",
       [
         "expo-image-picker",
         {

@@ -1,5 +1,5 @@
-import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import React, { useState } from 'react';
+import { View, Text, StyleSheet, TouchableOpacity, Alert, ActivityIndicator } from 'react-native';
 import { useRouter } from 'expo-router';
 import { Check } from 'lucide-react-native';
 import { useTranslation } from 'react-i18next';
@@ -10,6 +10,7 @@ export default function SubscriptionScreen() {
   const router = useRouter();
   const { t } = useTranslation();
   const { setSubscribed } = useUserStore();
+  const [isLoading, setIsLoading] = useState(false);
 
   const features = [
     t('subscription.feature1'),
@@ -18,9 +19,24 @@ export default function SubscriptionScreen() {
     t('subscription.feature4'),
   ];
 
-  const handleSubscribe = () => {
-    setSubscribed(true);
-    router.back();
+  const handleSubscribe = async () => {
+    setIsLoading(true);
+    try {
+      // TODO: 实际的内购逻辑
+      // 目前先模拟订阅成功
+      await new Promise(resolve => setTimeout(resolve, 500));
+
+      setSubscribed(true);
+      router.back();
+    } catch (error) {
+      console.error('订阅错误:', error);
+      Alert.alert(
+        t('subscription.errorTitle') || '提示',
+        t('subscription.errorMessage') || '订阅服务暂时不可用，请稍后再试'
+      );
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -44,8 +60,16 @@ export default function SubscriptionScreen() {
         <Text style={styles.period}>{t('subscription.period')}</Text>
       </View>
 
-      <TouchableOpacity style={styles.button} onPress={handleSubscribe}>
-        <Text style={styles.buttonText}>{t('subscription.subscribe')}</Text>
+      <TouchableOpacity
+        style={[styles.button, isLoading && styles.buttonDisabled]}
+        onPress={handleSubscribe}
+        disabled={isLoading}
+      >
+        {isLoading ? (
+          <ActivityIndicator color={Colors.white} />
+        ) : (
+          <Text style={styles.buttonText}>{t('subscription.subscribe')}</Text>
+        )}
       </TouchableOpacity>
 
       <Text style={styles.terms}>
@@ -112,6 +136,9 @@ const styles = StyleSheet.create({
     borderRadius: 12,
     padding: 16,
     alignItems: 'center',
+  },
+  buttonDisabled: {
+    opacity: 0.7,
   },
   buttonText: {
     color: Colors.white,
