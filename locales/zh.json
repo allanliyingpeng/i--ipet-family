@@ -119,7 +119,12 @@
     "period": "/月",
     "subscribe": "立即订阅",
     "terms": "订阅将自动续费，可随时在设置中取消",
-    "backTitle": "主页"
+    "backTitle": "主页",
+    "errorTitle": "提示",
+    "errorMessage": "订阅服务暂时不可用，请稍后再试",
+    "notAvailable": "订阅服务只在 iOS 正式版和 Google Play 正式版可用",
+    "purchaseFailed": "购买失败，请稍后再试",
+    "userCancelled": "已取消订阅"
   },
   "limitModal": {
     "title": "今日免费次数已用完",

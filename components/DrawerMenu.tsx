@@ -9,6 +9,7 @@ import {
   Linking,
   Dimensions,
   Animated,
+  Alert,
 } from 'react-native';
 import { X, Crown, RefreshCw, Mail, MessageSquare, Shield, FileText, Camera, MessageCircle, Image, Gift } from 'lucide-react-native';
 import { useRouter } from 'expo-router';
@@ -16,6 +17,7 @@ import { useTranslation } from 'react-i18next';
 import { Colors } from '../constants/Colors';
 import { useUserStore, DEFAULT_FREE_LIMITS, AD_REWARDS } from '../stores/userStore';
 import { PromoCodeModal } from './PromoCodeModal';
+import { restorePurchases, isIAPAvailable, initIAP } from '../services/iap';
 
 const { width: SCREEN_WIDTH } = Dimensions.get('window');
 const DRAWER_WIDTH = SCREEN_WIDTH * 0.7;
@@ -38,6 +40,53 @@ export function DrawerMenu({ visible, onClose }: DrawerMenuProps) {
     generateAdWatchCount,
   } = useUserStore();
 
+  // 恢复购买
+  const handleRestorePurchase = async () => {
+    if (!isIAPAvailable()) {
+      Alert.alert(
+        t('subscription.errorTitle'),
+        t('subscription.notAvailable')
+      );
+      return;
+    }
+
+    // 先初始化 IAP
+    const initSuccess = await initIAP();
+    if (!initSuccess) {
+      Alert.alert(
+        t('subscription.errorTitle'),
+        t('subscription.notAvailable')
+      );
+      return;
+    }
+
+    const result = await restorePurchases();
+    if (result.success) {
+      if (result.isPro) {
+        // 恢复成功，设置 Pro 状态
+        const expiresAt = new Date();
+        expiresAt.setMonth(expiresAt.getMonth() + 1);
+        useUserStore.setState({
+          isPro: true,
+          proExpiresAt: expiresAt.toISOString(),
+        });
+        Alert.alert(t('subscription.errorTitle'), '恢复成功！');
+      } else {
+        Alert.alert(t('subscription.errorTitle'), '没有找到可恢复的订阅');
+      }
+    } else {
+      if (result.errorCode === 'IAP_NOT_AVAILABLE') {
+        Alert.alert(
+          t('subscription.errorTitle'),
+          t('subscription.notAvailable')
+        );
+      } else {
+        Alert.alert(t('subscription.errorTitle'), result.error || '恢复失败');
+      }
+    }
+    onClose();
+  };
+
   // 格式化到期时间
   const formatExpiresAt = (dateStr: string | null) => {
     if (!dateStr) return '';
@@ -56,9 +105,7 @@ export function DrawerMenu({ visible, onClose }: DrawerMenuProps) {
     {
       icon: RefreshCw,
       label: t('drawer.restorePurchase'),
-      onPress: () => {
-        onClose();
-      },
+      onPress: handleRestorePurchase,
     },
     {
       icon: Mail,

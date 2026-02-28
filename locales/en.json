@@ -119,7 +119,12 @@
     "period": "/month",
     "subscribe": "Subscribe Now",
     "terms": "Auto-renews. Cancel anytime.",
-    "backTitle": "Home"
+    "backTitle": "Home",
+    "errorTitle": "Notice",
+    "errorMessage": "Subscription service is temporarily unavailable",
+    "notAvailable": "Subscription is only available on iOS App Store and Google Play releases",
+    "purchaseFailed": "Purchase failed, please try again later",
+    "userCancelled": "Subscription cancelled"
   },
   "limitModal": {
     "title": "Daily Limit Reached",

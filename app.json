@@ -14,7 +14,12 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.petapp.ipet"
+      "bundleIdentifier": "com.petapp.ipet",
+      "splash": {
+        "image": "./assets/splash.png",
+        "resizeMode": "cover",
+        "backgroundColor": "#ffffff"
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -27,7 +32,12 @@
       "package": "com.petapp.ipet",
       "permissions": [
         "android.permission.RECORD_AUDIO"
-      ]
+      ],
+      "splash": {
+        "image": "./assets/splash.png",
+        "resizeMode": "cover",
+        "backgroundColor": "#ffffff"
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png",
@@ -35,7 +45,15 @@
     },
     "plugins": [
       "expo-router",
-      "expo-splash-screen",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash.png",
+          "imageWidth": 1126,
+          "resizeMode": "cover",
+          "backgroundColor": "#ffffff"
+        }
+      ],
       [
         "expo-image-picker",
         {
