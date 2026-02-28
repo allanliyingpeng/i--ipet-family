@@ -70,9 +70,9 @@ export function DrawerMenu({ visible, onClose }: DrawerMenuProps) {
           isPro: true,
           proExpiresAt: expiresAt.toISOString(),
         });
-        Alert.alert(t('subscription.errorTitle'), '恢复成功！');
+        Alert.alert(t('subscription.errorTitle'), t('subscription.restoreSuccess'));
       } else {
-        Alert.alert(t('subscription.errorTitle'), '没有找到可恢复的订阅');
+        Alert.alert(t('subscription.errorTitle'), t('subscription.restoreNotFound'));
       }
     } else {
       if (result.errorCode === 'IAP_NOT_AVAILABLE') {
@@ -81,7 +81,7 @@ export function DrawerMenu({ visible, onClose }: DrawerMenuProps) {
           t('subscription.notAvailable')
         );
       } else {
-        Alert.alert(t('subscription.errorTitle'), result.error || '恢复失败');
+        Alert.alert(t('subscription.errorTitle'), result.error || t('subscription.restoreFailed'));
       }
     }
     onClose();
@@ -122,14 +122,18 @@ export function DrawerMenu({ visible, onClose }: DrawerMenuProps) {
     {
       icon: Shield,
       label: t('drawer.privacy'),
-      link: 'https://petapp.com/privacy',
-      onPress: () => onClose(),
+      onPress: () => {
+        onClose();
+        Linking.openURL('https://ifamily.pet/privacy.html');
+      },
     },
     {
       icon: FileText,
       label: t('drawer.disclaimer'),
-      link: 'https://petapp.com/disclaimer',
-      onPress: () => onClose(),
+      onPress: () => {
+        onClose();
+        Linking.openURL('https://ifamily.pet/terms.html');
+      },
     },
   ];
 

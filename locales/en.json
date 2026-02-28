@@ -122,9 +122,13 @@
     "backTitle": "Home",
     "errorTitle": "Notice",
     "errorMessage": "Subscription service is temporarily unavailable",
-    "notAvailable": "Subscription is only available on iOS App Store and Google Play releases",
+    "notAvailable": "Please download the latest version from iOS App Store or Google Play to subscribe",
     "purchaseFailed": "Purchase failed, please try again later",
-    "userCancelled": "Subscription cancelled"
+    "userCancelled": "Subscription cancelled",
+    "restoreSuccess": "Restore successful!",
+    "restoreNotFound": "No subscription found to restore",
+    "restoreFailed": "Restore failed, please try again later",
+    "storeHint": "Please download from iOS App Store or Google Play"
   },
   "limitModal": {
     "title": "Daily Limit Reached",

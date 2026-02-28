@@ -122,9 +122,13 @@
     "backTitle": "主页",
     "errorTitle": "提示",
     "errorMessage": "订阅服务暂时不可用，请稍后再试",
-    "notAvailable": "订阅服务只在 iOS 正式版和 Google Play 正式版可用",
+    "notAvailable": "请到 iOS App Store 和 Google Play 下载最新版本进行订阅",
     "purchaseFailed": "购买失败，请稍后再试",
-    "userCancelled": "已取消订阅"
+    "userCancelled": "已取消订阅",
+    "restoreSuccess": "恢复成功！",
+    "restoreNotFound": "没有找到可恢复的订阅",
+    "restoreFailed": "恢复失败，请稍后再试",
+    "storeHint": "请到 iOS App Store 或 Google Play 下载正式版本"
   },
   "limitModal": {
     "title": "今日免费次数已用完",

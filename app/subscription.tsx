@@ -182,9 +182,9 @@ export default function SubscriptionScreen() {
       </View>
 
       <TouchableOpacity
-        style={[styles.button, isLoading && styles.buttonDisabled]}
+        style={[styles.button, (isLoading || (!isIAPAvailable() && !iapReady)) && styles.buttonDisabled]}
         onPress={handleSubscribe}
-        disabled={isLoading}
+        disabled={isLoading || (!isIAPAvailable() && !iapReady)}
       >
         {isLoading ? (
           <ActivityIndicator color={Colors.white} />
@@ -193,9 +193,15 @@ export default function SubscriptionScreen() {
         )}
       </TouchableOpacity>
 
-      <Text style={styles.terms}>
-        {t('subscription.terms')}
-      </Text>
+      {!isIAPAvailable() && !iapReady ? (
+        <Text style={styles.notAvailableText}>
+          {t('subscription.notAvailable')}
+        </Text>
+      ) : (
+        <Text style={styles.terms}>
+          {t('subscription.terms')}
+        </Text>
+      )}
     </View>
   );
 }
@@ -271,5 +277,12 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     fontSize: 12,
     color: Colors.textSecondary,
+  },
+  notAvailableText: {
+    marginTop: 16,
+    textAlign: 'center',
+    fontSize: 14,
+    color: '#E74C3C',
+    paddingHorizontal: 16,
   },
 });

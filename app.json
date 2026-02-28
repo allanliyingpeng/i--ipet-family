@@ -10,14 +10,14 @@
     "scheme": "pet-app",
     "splash": {
       "image": "./assets/splash.png",
-      "resizeMode": "cover"
+      "resizeMode": "contain"
     },
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.petapp.ipet",
       "splash": {
         "image": "./assets/splash.png",
-        "resizeMode": "cover",
+        "resizeMode": "contain",
         "backgroundColor": "#ffffff"
       }
     },
@@ -35,7 +35,7 @@
       ],
       "splash": {
         "image": "./assets/splash.png",
-        "resizeMode": "cover",
+        "resizeMode": "contain",
         "backgroundColor": "#ffffff"
       }
     },
@@ -50,7 +50,7 @@
         {
           "image": "./assets/splash.png",
           "imageWidth": 1126,
-          "resizeMode": "cover",
+          "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
       ],
