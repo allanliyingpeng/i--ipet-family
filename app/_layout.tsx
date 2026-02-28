@@ -26,8 +26,7 @@ export default function RootLayout() {
   useEffect(() => {
     const timer = setTimeout(async () => {
       await SplashScreen.hideAsync();
-    }, 2000); // 显示 2 秒
-
+    }, 2000);
     return () => clearTimeout(timer);
   }, []);
 

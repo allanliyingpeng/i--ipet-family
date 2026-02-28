@@ -48,8 +48,8 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/splash.png",
-          "imageWidth": 1126,
+          "image": "./assets/icon.png",
+          "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
@@ -73,8 +73,9 @@
     "extra": {
       "router": {},
       "eas": {
-        "projectId": "73776da2-08b5-426b-9688-ca362650d628"
+        "projectId": "c8d1e39b-42e9-4e3f-97cf-83381471ed38"
       }
-    }
+    },
+    "owner": "brucelyp"
   }
 }
